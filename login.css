@@ -1,0 +1,47 @@
+.mian {
+    text-align: center;
+    /* background-color: black; */
+    margin-top: 150px;
+}
+
+.text {
+    margin-bottom: 30px;
+}
+
+.fname {
+    border: 1px solid lightblue;
+    border-radius: 8px;
+    height: 28px;
+    text-align: center;
+    width: 250px;
+}
+.input::focus { outline-color: blue; } 
+.lname {
+    border: 1px solid lightblue;
+    border-radius: 8px;
+    height: 28px;
+    text-align: center;
+    width: 250px;
+    
+}
+.box-set {
+    margin: 25px;
+    display: inline-grid
+}
+
+.email {
+    border: 1px solid lightblue;
+    border-radius: 8px;
+    height: 30px;
+    margin-bottom: 20px;
+    width: 500px;
+
+}
+
+.Password {
+    border: 1px solid lightblue;
+    border-radius: 8px;
+    height: 30px;
+    width: 500px;
+
+}
