@@ -15,14 +15,13 @@
     text-align: center;
     width: 250px;
 }
-.input::focus { outline-color: blue; } 
+
 .lname {
     border: 1px solid lightblue;
     border-radius: 8px;
     height: 28px;
     text-align: center;
     width: 250px;
-    
 }
 .box-set {
     margin: 25px;
@@ -45,3 +44,8 @@
     width: 500px;
 
 }
+.input{ outline-color: green; } 
+.fname:focus { outline-color:blue; } 
+.lname:focus { outline-color:blue; } 
+.email:focus { outline-color:blue; } 
+.Password:focus { outline-color:blue; } 
