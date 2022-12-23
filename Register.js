@@ -6,7 +6,7 @@ function myfunc(e) {
 
     let name;
 
-    let localStorageData = window.localStorage.getItem('name')
+    let localStorageData = window.localStorage.getItem('Register')
     if (localStorageData === null) {
         name = []
     } else {
@@ -18,7 +18,7 @@ function myfunc(e) {
             password: password
         }
     )
-    window.localStorage.setItem('name', JSON.stringify(name));
+    window.localStorage.setItem('Register', JSON.stringify(name));
     console.log(localStorageData);
 
     

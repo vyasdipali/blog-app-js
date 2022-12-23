@@ -1,26 +1,43 @@
-    function myfunc(event) {
-        event.preventDefault();
-        var email = ((document.getElementById("email-login") || {}).value) || "";
-        var password = ((document.getElementById("password-login") || {}).value) || "";
-        console.log("password:", password)
-        let name;
+function myfunc(event) {
+    event.preventDefault();
+    var email = ((document.getElementById("email-login") || {}).value) || "";
+    var password = ((document.getElementById("password-login") || {}).value) || "";
 
-        let localStorageData = window.localStorage.getItem('name')
+    let name;
+    let registerData = JSON.parse(window.localStorage.getItem('Register'))
+    console.log("registerData", registerData);
+
+    for (let index = 0; index < registerData.length; index++) {
+        const registerEmail = registerData[index].email;
+        const registerPassword = registerData[index].password;
+
+        let localStorageData = window.localStorage.getItem('Login')
         if (localStorageData === null) {
             name = []
         } else {
             name = JSON.parse(localStorageData)
         }
         name.push(
-            {                
-                email:email,
-                password:password
+            {
+                email: email,
+                password: password
             }
         )
-        window.localStorage.setItem('name', JSON.stringify(name));
-        console.log(localStorageData);
+        if (registerEmail === email && registerPassword === password) {
+            window.localStorage.setItem('Login', JSON.stringify(name));
 
-        let emailData = window.localStorage.getItem('email')
-    console.log("emailData",emailData)
+            alert("You must log in to follow")
+        }
+        else {
+            alert("hello")
+        }
+    
     }
+
+
+    // window.localStorage.setItem('Login', JSON.stringify(name));
+    // console.log(localStorageData);
+}
+
+
 
