@@ -1,29 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="./Login.css">
+<script src="./login.js"></script>
     <title>Document</title>
 </head>
-<body>
-    <div class="mian">
-        <div>
-            <h1 class="Register">Register</h1>
-            <p  class="text">Please add your details to register with us</p>
-        </div>
-        <div>
-           <div>
-            <input type="firstname" placeholder="First name" class="fname" >
-            <input type="lirstname" placeholder="Lirst name" class="lname"> 
-        </div>
-           <div class="box-set">
-            <input type="Email address" placeholder="Email address" class="email" > 
-            <input type="Password" placeholder="Password" class="Password">
-           </div>
-        </div>
 
-    </div>
+<body>
+    <form action="" method="get"onsubmit="myfunc(event)">
+        <div class="login-first">
+            <div>
+                <h1>Welcome Back!</h1>
+            </div>
+            <div>
+                <p>Log in to your account</p>
+            </div>
+            <div class="box-set-login">
+                <input type="Email address" placeholder="Email address" class="email-login" id="email-login" required>
+                <input type="Password" placeholder="Password" class="Password-login" id ="password-login" required>
+            </div>
+            <div class="login-set-pass">
+                <div class="remember">
+                    <input type="checkbox" class="Remember" name="Remember" required>
+                    <label for="">Remember me</label>
+                </div>
+                    <p class="froget-pass">forgot your password?</p>
+            </div>
+            <div>
+                <button type="submit" class="login-button" >Log in</button>
+            </div>
+            <p class="login-text">Or not have account <a href="./Register.html">Register</a>  </p>
+        </div>
+    </form>
+
 </body>
 </html>
