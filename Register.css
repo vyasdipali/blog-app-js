@@ -22,6 +22,7 @@
     text-align: center;
     width: 250px;
 }
+
 .box-set {
     margin: 25px;
     display: inline-grid
@@ -44,24 +45,74 @@
 
 }
 
-.Register-input{
+.Register-input {
     height: 37px;
     width: 510px;
     border-radius: 8px;
-    background-color:#5856d6;
+    background-color: #5856d6;
     border: 1px solid lightblue;
     color: aliceblue;
     font-weight: bold;
     font-weight: 500;
 }
-.fname:focus { outline-color:blue; } 
-.lname:focus { outline-color:blue; } 
-.email:focus { outline-color:blue; } 
-.Password:focus { outline-color:blue; } 
-.text-last{
+
+.fname:focus {
+    outline-color: blue;
+}
+
+.lname:focus {
+    outline-color: blue;
+}
+
+.email:focus {
+    outline-color: blue;
+}
+
+.Password:focus {
+    outline-color: blue;
+}
+
+.text-last {
     color: #757575;
     margin-top: 30px;
 }
-.login-button{
+
+.login-button {
     text-decoration: none;
 }
+
+/* .toast {
+    display: flex;
+}
+
+.Warning {
+    background-color: #ffdb9b;
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    border-radius: 10px;
+    border-left: 15px solid #ffa502;
+}
+
+.icon {
+    margin-inline: 13px;
+    width: 20px;
+    height: 40px;
+}
+
+.x-icon {
+    display: flex;
+    margin-inline: inherit;
+    margin-right: 13px;
+}
+
+.right {
+    background-color: #ffdb9b;
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    border-radius: 10px;
+    border-left: 15px solid #ffa502;
+} */

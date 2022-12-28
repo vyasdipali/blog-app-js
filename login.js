@@ -25,19 +25,18 @@ function myfunc(event) {
         )
         if (registerEmail === email && registerPassword === password) {
             window.localStorage.setItem('Login', JSON.stringify(name));
-
-            alert("You must log in to follow")
+            toastr.success('Login to the success', {timeOut: 5000})
         }
         else {
-            alert("hello")
+           toastr.error('Somthing went wrong')
         }
-    
-    }
-
-
-    // window.localStorage.setItem('Login', JSON.stringify(name));
-    // console.log(localStorageData);
+    document.getElementById("email-login").value=""
+    document.getElementById("password-login").value=""
+    }   
 }
+
+
+
 
 
 

@@ -1,3 +1,63 @@
-.nev-blog{
+.nevbar-ul {
     display: flex;
+    gap: 45px;
+    justify-content:center;
+
+}
+.nev-01blog{
+    background-color: #e0e0e0;
+    height: 60px;
+    display: flex;
+
+}
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.logout {
+    margin-left: 56pc;
+    font-size: 20px;
+    color:  #616161;
+}
+
+.Blog {
+    font-size: 21px;
+    color: black;
+    font-weight: bold;
+}
+.Blogs{
+    font-size: 21px;
+    color:  #616161;
+   
+}
+.welcome{
+   font-size:30px;
+  margin-inline: 50px;
+   margin-top: 61px;
+   font-weight: bolds;
+}
+
+.set-bolgs-button{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.button-add{
+    width: 105px;
+    height: 39px;
+    color: white;
+    background: blue;
+    border: aliceblue;
+    border-radius: 6px;
+}
+
+.add-blogs{
+    font-size:25px;
+    margin-inline: 50px;
+     font-weight: bolds;
+
 }

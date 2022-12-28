@@ -1,5 +1,10 @@
+
+
+
 function myfunc(e) {
+// alert()
     e.preventDefault();
+    toastr.success('Login to the success', {timeOut: 5000})
     var email = ((document.getElementById("email") || {}).value) || "";
     var password = ((document.getElementById("password") || {}).value) || "";
     console.log("password:", password)
@@ -21,6 +26,9 @@ function myfunc(e) {
     window.localStorage.setItem('Register', JSON.stringify(name));
     console.log(localStorageData);
 
-    
+    document.getElementById("email").value = ""
+    document.getElementById("password").value = ""
+    document.getElementById("fname").value = ""
+    document.getElementById("lname").value = ""
 
 }

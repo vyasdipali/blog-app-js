@@ -6,12 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Login.css">
-<script src="./login.js"></script>
+    <script src="./login.js"></script>
     <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 </head>
 
 <body>
-    <form action="" method="get"onsubmit="myfunc(event)">
+
+    <form action="" method="get" onsubmit="myfunc(event)">
         <div class="login-first">
             <div>
                 <h1>Welcome Back!</h1>
@@ -21,21 +25,23 @@
             </div>
             <div class="box-set-login">
                 <input type="Email address" placeholder="Email address" class="email-login" id="email-login" required>
-                <input type="Password" placeholder="Password" class="Password-login" id ="password-login" required>
+                <input type="Password" placeholder="Password" class="Password-login" id="password-login" required>
             </div>
             <div class="login-set-pass">
                 <div class="remember">
                     <input type="checkbox" class="Remember" name="Remember" required>
                     <label for="">Remember me</label>
                 </div>
-                    <p class="froget-pass">forgot your password?</p>
+                
+                <p class="froget-pass">forgot your password?</p>
             </div>
             <div>
                 <button type="submit" class="login-button">Log in</button>
             </div>
-            <p class="login-text">Or not have account <a href="./Register.html">Register</a>  </p>
+            <p class="login-text">Or not have account <a href="./Register.html">Register</a> </p>
         </div>
     </form>
 
 </body>
+
 </html>
