@@ -1,6 +1,4 @@
 
-
-
 function myfunc(e) {
 // alert()
     e.preventDefault();
@@ -25,6 +23,8 @@ function myfunc(e) {
     )
     window.localStorage.setItem('Register', JSON.stringify(name));
     console.log(localStorageData);
+ 
+    window.location.href='./blog.html';
 
     document.getElementById("email").value = ""
     document.getElementById("password").value = ""

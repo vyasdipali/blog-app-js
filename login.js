@@ -1,4 +1,5 @@
 function myfunc(event) {
+    
     event.preventDefault();
     var email = ((document.getElementById("email-login") || {}).value) || "";
     var password = ((document.getElementById("password-login") || {}).value) || "";
@@ -26,6 +27,9 @@ function myfunc(event) {
         if (registerEmail === email && registerPassword === password) {
             window.localStorage.setItem('Login', JSON.stringify(name));
             toastr.success('Login to the success', {timeOut: 5000})
+
+            window.location.href='./blog.html';
+
         }
         else {
            toastr.error('Somthing went wrong')
