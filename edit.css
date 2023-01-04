@@ -5,10 +5,14 @@
 
 }
 
+.blog{
+    background-color: aqua;
+}
 .nev-01blog {
     background-color:antiquewhite;
     height: 60px;
     display: flex;
+
 
 }
 

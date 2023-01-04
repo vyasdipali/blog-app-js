@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="./edit.js"></script>
+    <link rel="stylesheet" href="./edit.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./blog-new.css">
-    <script src="./blog-new.js"></script>
     <title>Document</title>
 </head>
 
@@ -18,9 +18,6 @@
 
                 <div class="set-blog-create">
 
-                    <!-- <div class="new-create"> -->
-                        <div class="create-blog-line">Create New Blog</div>
-                    <!-- </div> -->
                     <div class="logo">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="circle-x" viewBox="0 0 16 16" onclick="window.open('blog.html')">
@@ -44,18 +41,47 @@
                     </div>
                 </div>
                 <div class="button-set">
-                    <button class="add-button" onclick="myfunc(event)" id="add">add</button>
-                    <button class="deleted-button" id="deleted" onclick="showBlog()">deleted</button>
+                    <button class="add-button" id="submit" onclick="onClicckHandler()">submit</button>
                 </div>
             </div>
-
         </div>
     </div>
 
 
 
+    <script>
+
+        // const updateArr = JSON.parse(window.localStorage.getItem("matcheid"));
+        // const onClicckHandler = () => {
+        //     var blogTitle = ((document.getElementById("Titletext") || {}).value) || "";
+        //     console.log('blogTitle', blogTitle);
+
+        //     var blogdescription = ((document.getElementById("description") || {}).value) || "";
+        //     console.log("blogdescription", blogdescription)
+        //     console.log("updateArr.id", updateArr.id);
+
+        //     let blogArray = [];
+        //     blogArray = JSON.parse(localStorage.getItem("blogData")) || [];
 
 
+        //     const data = blogArray.map((blogdata) => {
+        //         if (blogdata.id == updateArr.id) {
+        //             return { ...blogdata, Titletext: blogTitle, description: blogdescription }
+        //         } return blogdata
+        //     }
+        //     )
+        //     localStorage.setItem("blogData", JSON.stringify(data))
+        //     window.location.href = 'blog.html'
+        //     console.log("data>>>", data);
+
+        //     console.log("blogArray", blogArray);
+        // }
+    </script>
+
+
+</body>
+
+</html>
 
 </body>
 

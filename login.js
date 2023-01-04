@@ -1,5 +1,4 @@
 function myfunc(event) {
-    
     event.preventDefault();
     var email = ((document.getElementById("email-login") || {}).value) || "";
     var password = ((document.getElementById("password-login") || {}).value) || "";
