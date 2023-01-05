@@ -80,39 +80,3 @@
 .login-button {
     text-decoration: none;
 }
-
-/* .toast {
-    display: flex;
-}
-
-.Warning {
-    background-color: #ffdb9b;
-    max-width: 300px;
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-    border-radius: 10px;
-    border-left: 15px solid #ffa502;
-}
-
-.icon {
-    margin-inline: 13px;
-    width: 20px;
-    height: 40px;
-}
-
-.x-icon {
-    display: flex;
-    margin-inline: inherit;
-    margin-right: 13px;
-}
-
-.right {
-    background-color: #ffdb9b;
-    max-width: 300px;
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-    border-radius: 10px;
-    border-left: 15px solid #ffa502;
-} */

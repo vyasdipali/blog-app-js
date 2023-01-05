@@ -1,0 +1,39 @@
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding-top: 113px;
+}
+.see-main{
+    background-color: white;
+    width: 400px;
+    border-radius: 4px;
+  
+}
+.pic-set{
+    width: inherit;
+    border-radius: 4px;
+    width: 400px;
+}
+.Titletext{
+    color:black;
+   
+    padding-left: 20px
+}
+.description{
+    color:black;
+    padding-left: 20px;
+}
+.back{
+    width: 105px;
+    height: 39px;
+    color: rgb(7, 7, 7);
+    background: rgb(206, 206, 216);
+    border: aliceblue;
+    border-radius: 5px;
+    font-size:1.0rem;
+   
+}
+.back-div{
+    padding: 20px;
+}

@@ -9,9 +9,9 @@ function showBlog() {
     let html = ""
     for (const iterator of blogData) {
         const description = iterator.description;
-        // console.log(description);
+        console.log(description);
         const Titletext = iterator.Titletext;
-        // console.log(Titletext);
+        console.log(Titletext);
     }
 
 
@@ -22,14 +22,15 @@ function showBlog() {
         console.log("element...", element.id);;
         html +=
             ` <div class="second-para-div">
-            <img src="./imgs/tree.jpg" alt="" class="pic-set">
+            <img src="./imgs/glenn-carstens-peters-npxXWgQ33ZQ-unsplash.jpg" alt="" class="pic-set">
+          
                 <p class="create-blog-line">${element.Titletext}</p>
                 <p class="text">${element.description}</p>
                 <div class="link-bolg">
 
         <a onclick='editfun(${element.id})'>Edit</a>
 
-        <a href="Show more ">Show more</a>
+        <a onclick ='seemore(${element.id})'>Show more</a>
         <a onclick='deleteNote(${element.id})'>Delete</a>
     </div>  
         </div> `
@@ -67,8 +68,16 @@ function editfun(element){
     let blogData=[];
     blogData=JSON.parse(localStorage.getItem("blogData"))||[];
     let matcheid= blogData.find((id)=>id.id===element);
- 
     localStorage.setItem("matcheid",JSON.stringify(matcheid));
-   
     window.location.href="./edit.html"       
+}
+
+function seemore(element) {
+    // alert()
+    let blogData=[];
+    blogData=JSON.parse(localStorage.getItem("blogData"))||[];
+    let showmore=blogData.find((id)=>id.id===element);
+    localStorage.setItem("showmore",JSON.stringify(showmore));
+    window.location.href="./show.html"
+    
 }

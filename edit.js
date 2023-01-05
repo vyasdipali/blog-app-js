@@ -30,7 +30,5 @@ const onClicckHandler = () => {
     localStorage.setItem("blogData", JSON.stringify(data))
     window.location.href = 'blog.html'
     console.log("data>>>", data);
-
     console.log("blogArray", blogArray);
 }
-    

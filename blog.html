@@ -4,145 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="widt=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./blog.css">
     <script src="./blog.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 
 <body>
-    <div>
-
-        <nav class="nev-01blog">
-            <ul class="nevbar-ul">
-                <li class="li a">
-                    <a href="#" class="Blog">Blog App</a>
-                </li>
-                <li class="li a">
-                    <a href="#" class="Blogs">Blogs</a>
-                </li>
-                <li class="li a">
-                    <a href="./Login.html" class="logout"> logout</a>
-                </li>
-            </ul>
-        </nav>
-        <div>
-            <p class="welcome">Welcome Hey there </p>
-            <div class="set-bolgs-button">
-                <div>
-                    <p class="add-blogs">Your blogs</p>
-                </div>
-                <div>
-                    <button class="button-add" onclick="window.location.href ='blog-new.HTML';">ADD NEW</button>
-                </div>
+    <div class="main-blog-app">
+        <div class="login-blog-main">
+            <div></div>
+            <div class="blog-post">
+                Blog Post
             </div>
-            <div class="second-div"></div>
-        </div>      
-
+            
+            <div>
+                <a href="./Login.html" class="logout"> logout</a>
+            </div>
+        </div>
+        <div class="welcome">Welcome Hey there</div>
+        <div class="button"> 
+            <button class="button-add" onclick="window.location.href ='blog-new.HTML';"> Create blog</button>
+        </div>
+        <div class="second-div"></div>
     </div>
-
-   
 </body>
 
 </html>
-<!-- <!DOCTYPE html>
-<html>
-<style>
-    .cancelbtn,
-    .deletebtn {
-        width: 85px;
-        height: 36px;
-    }
-
-
-    .cancelbtn {
-        background-color: #ccc;
-        color: black;
-    }
-
-
-    .deletebtn {
-        background-color: #f44336;
-    }
-
-
-    .container {
-        padding: 16px;
-        text-align: center;
-    }
-
-    /* Modal Content/Box */
-    .modal-content {
-        background-color: #fefefe;
-        margin: 5% auto 15% auto;
-        border: 1px solid #888;
-        width: 25%;
-    }
-
-    /* Style the horizontal ruler */
-    hr {
-        border: 1px solid #f1f1f1;
-        margin-bottom: 25px;
-    }
-
-    /* The Modal Close Button (x) */
-    .close {
-        position: absolute;
-        right: 35px;
-        top: 15px;
-        font-size: 40px;
-        font-weight: bold;
-        color: #f1f1f1;
-    }
-
-    .close:hover,
-    .close:focus {
-        color: #f44336;
-        cursor: pointer;
-    }
-
-    /* Clear floats */
-    .clearfix::after {
-        content: "";
-        clear: both;
-        display: table;
-    }
-
-    /* Change styles for cancel button and delete button on extra small screens */
-    @media screen and (max-width: 300px) {
-
-        .cancelbtn,
-        .deletebtn {
-            width: 100%;
-        }
-    }
-</style>
-
-<body>
-    <div id="id01" class="modal">
-      
-        <form class="modal-content" action="/action_page.php">
-            <div class="container">
-                <h2>Delete Your Blog</h2>
-                <div class="clearfix">
-                    <button type="button" onclick="document.getElementById('id01').style.display='none'"
-                        class="cancelbtn">Cancel</button>
-                    <button type="button" onclick="document.getElementById('id01').style.display='none'"
-                        class="deletebtn">Delete</button>
-                </div>
-            </div>
-    </div>
-
-    <script>
- 
-        var modal = document.getElementById('id01');
-        window.onclick = function (event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-    </script>
-
-</body>
-
-</html> -->

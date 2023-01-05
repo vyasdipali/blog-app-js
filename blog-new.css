@@ -1,8 +1,11 @@
-
+body{
+    background-color: black;
+}
 .blog{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 113px;
 }
 
 .blog-contains {
@@ -10,7 +13,7 @@
 }
 
 .blog-main {
-    background-color:rosybrown;
+    background-color:whitesmoke;
     width: 400px;
     border-radius: 4px;
     height: 350px;
@@ -23,11 +26,11 @@
     display:flex;
     justify-content: space-between;
 
+
 }
 .set-blog-create {
     display: flex;
     justify-content: space-between; 
-    /* justify-content: space-between; */
 
 }
 .circle-x {
@@ -38,7 +41,7 @@
 
 }
 .create-blog-line {
-    /* color: white; */
+  
     font-size: 30px;
     font-weight: bold;
     margin-top: -24px;
@@ -58,8 +61,6 @@
     gap: 94px;
 }
 
-
-
 .Title-text {
     height: 35px;
     width: 300px;
@@ -77,10 +78,13 @@
     height: 30px;
     border-radius: 6px;
     border: aliceblue;
+    background-color: black;
+    color: white;
 }
 
 .add-button:hover {
-    background-color: #a8d7e1
+    background-color:black;
+
 }
 
 .deleted-button {

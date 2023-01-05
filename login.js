@@ -1,8 +1,15 @@
 function myfunc(event) {
+    var data = localStorage.getItem("Register");
+    console.log("data")
+    if (data==null) {
+        alert("please Register")
+        document.getElementById("email-login").value=""
+    document.getElementById("password-login").value=""
+    }
+    
     event.preventDefault();
     var email = ((document.getElementById("email-login") || {}).value) || "";
     var password = ((document.getElementById("password-login") || {}).value) || "";
-
     let name;
     let registerData = JSON.parse(window.localStorage.getItem('Register'))
     console.log("registerData", registerData);
@@ -23,6 +30,7 @@ function myfunc(event) {
                 password: password
             }
         )
+        
         if (registerEmail === email && registerPassword === password) {
             window.localStorage.setItem('Login', JSON.stringify(name));
             toastr.success('Login to the success', {timeOut: 5000})
